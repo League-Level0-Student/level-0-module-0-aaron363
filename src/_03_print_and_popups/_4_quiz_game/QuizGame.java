@@ -16,10 +16,20 @@ public class QuizGame {
 			score += 1;
 			JOptionPane.showMessageDialog(null, "You are correct!");
 		}else {
+			score -= 1;
 			JOptionPane.showMessageDialog(null, "The correct answer is 2007");
 		}
-				// 4.  if the user's answer was correct, add one to their score 
 		
+		String user1 = JOptionPane.showInputDialog("What year was Microsoft XP Operating System released?");
+				// 4.  if the user's answer was correct, add one to their score 
+		if (user1.equals("2001")) {
+			score += 1;
+			JOptionPane.showMessageDialog(null, "You are correct!");
+		}else {
+			score -= 1;
+			JOptionPane.showMessageDialog(null, "The correct answer is 2001");
+		}
+		JOptionPane.showMessageDialog(null, score);
 		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
 				// Option: Subtract a point from their score for a wrong answer
 		
